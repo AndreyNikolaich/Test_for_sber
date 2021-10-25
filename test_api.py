@@ -23,8 +23,8 @@ def test_api_post():
     assert res.status_code == 201
     data_res = res.json()
     assert_that(data_res, has_entries({
-    "name": not_none(),
-    "job": not_none()
+    "name": "morpheus",
+    "job": "leader"
 }))
 
 
